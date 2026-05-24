@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rohit More — Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════ CURSOR ═══════════════════════════════ -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ═══════════════════════════════ NAV ═══════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>RM<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#overview" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════ HERO ═══════════════════════════════════ -->
+  <section class="hero" id="home">
+    <canvas class="particles-canvas" id="particlesCanvas"></canvas>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-glow hero-glow-3"></div>
+
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for Work
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Rohit</span>
+        </h1>
+        <div class="hero-typewriter">
+          <span class="typewriter-static">I am a </span>
+          <span class="typewriter-dynamic" id="typewriterText"></span>
+          <span class="typewriter-cursor">|</span>
+        </div>
+        <p class="hero-desc">
+          Crafting immersive digital experiences through clean code, thoughtful UI design, and modern web technologies.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">
+            <span>View My Work</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn-secondary">Let's Talk</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num" data-count="0">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Years Exp.</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num" data-count="40">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Projects Done</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num" data-count="Nan">0</span><span class="stat-plus"></span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="workspace-wrapper">
+          <div class="workspace-glow"></div>
+          <div class="monitor-frame">
+            <div class="monitor-screen">
+              <div class="screen-topbar">
+                <span class="screen-dot red"></span>
+                <span class="screen-dot yellow"></span>
+                <span class="screen-dot green"></span>
+                <span class="screen-title">portfolio.jsx</span>
+              </div>
+              <div class="code-editor">
+                <div class="code-line"><span class="ln">1</span><span class="kw">import</span> <span class="str">React</span> <span class="kw">from</span> <span class="str">'react'</span><span class="punc">;</span></div>
+                <div class="code-line"><span class="ln">2</span></div>
+                <div class="code-line"><span class="ln">3</span><span class="kw">const</span> <span class="fn">Developer</span> <span class="op">=</span> <span class="punc">()</span> <span class="op">=&gt;</span> <span class="punc">{</span></div>
+                <div class="code-line"><span class="ln">4</span>  <span class="kw">return</span> <span class="punc">(</span></div>
+                <div class="code-line"><span class="ln">5</span>    <span class="tag">&lt;div</span> <span class="attr">className</span><span class="op">=</span><span class="str">"app"</span><span class="tag">&gt;</span></div>
+                <div class="code-line"><span class="ln">6</span>      <span class="tag">&lt;h1&gt;</span><span class="str">Hi, I'm Rohit</span><span class="tag">&lt;/h1&gt;</span></div>
+                <div class="code-line"><span class="ln">7</span>      <span class="tag">&lt;p&gt;</span><span class="str">Frontend Dev</span><span class="tag">&lt;/p&gt;</span></div>
+                <div class="code-line"><span class="ln">8</span>    <span class="tag">&lt;/div&gt;</span></div>
+                <div class="code-line"><span class="ln">9</span>  <span class="punc">)</span><span class="punc">;</span></div>
+                <div class="code-line"><span class="ln">10</span><span class="punc">}</span><span class="punc">;</span></div>
+                <div class="code-line"><span class="ln">11</span></div>
+                <div class="code-line"><span class="ln">12</span><span class="kw">export default</span> <span class="fn">Developer</span><span class="punc">;</span></div>
+                <div class="code-cursor-line"><span class="ln">13</span><span class="code-blink-cursor"></span></div>
+              </div>
+            </div>
+            <div class="monitor-stand-neck"></div>
+            <div class="monitor-stand-base"></div>
+          </div>
+          <div class="floating-badge badge-react">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#61DAFB"><circle cx="12" cy="12" r="2.5"/><ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="#61DAFB" stroke-width="1.5"/><ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="#61DAFB" stroke-width="1.5" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="#61DAFB" stroke-width="1.5" transform="rotate(120 12 12)"/></svg>
+            React.js
+          </div>
+          <div class="floating-badge badge-js">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F7DF1E"><rect width="24" height="24" rx="3" fill="#F7DF1E"/><text x="4" y="19" font-size="14" font-weight="bold" fill="#000">JS</text></svg>
+            JavaScript
+          </div>
+          <div class="floating-badge badge-node">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#68A063"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#68A063" stroke-width="1" fill="none"/><path d="M12 2v20M2 7l10 5 10-5" stroke="#68A063" stroke-width="1.5"/></svg>
+            Node.js
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ OVERVIEW ═══════════════════════════════ -->
+  <section class="overview section-pad" id="overview">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Building <span class="gradient-text">Digital Experiences</span></h2>
+        <p class="section-subtitle">Passionate frontend developer with a sharp eye for design and performance</p>
+      </div>
+
+      <div class="overview-layout">
+        <div class="overview-text">
+          <p class="overview-intro">
+            I'm <strong>Rohit More</strong>, a dedicated Frontend Developer with <strong>3+ years</strong> of experience building scalable web and mobile applications. I specialise in crafting pixel-perfect interfaces that marry beautiful design with clean, efficient code.
+          </p>
+          <p class="overview-body">
+            From React-powered SPAs to full WordPress ecosystems, I bring a full-spectrum skill set to every project. My workflow is built around modern toolchains, agile collaboration, and an unwavering focus on the end-user experience.
+          </p>
+          <a href="Rohit_more_resume.pdf"  download="Rohit_more_resume.pdf"  class="btn-primary">Download CV
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </a>
+        </div>
+
+        <div class="feature-cards">
+          <div class="feature-card" data-delay="0">
+            <div class="card-icon-wrap icon-web">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <h3>Web Developer</h3>
+            <p>Responsive, performant websites using React, HTML5, CSS3, and modern JS frameworks.</p>
+          </div>
+          <div class="feature-card" data-delay="100">
+            <div class="card-icon-wrap icon-mobile">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M12 18h.01"/></svg>
+            </div>
+            <h3>Mobile &amp; iOS Developer</h3>
+            <p>Cross-platform mobile apps delivering native-feel experiences on iOS and Android.</p>
+          </div>
+          <div class="feature-card" data-delay="200">
+            <div class="card-icon-wrap icon-wp">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+            </div>
+            <h3>WordPress Developer</h3>
+            <p>Custom themes, plugins, and Elementor builds tuned for speed and SEO excellence.</p>
+          </div>
+          <div class="feature-card" data-delay="300">
+            <div class="card-icon-wrap icon-app">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Application Developer</h3>
+            <p>Full-featured desktop and web apps engineered for complex workflows and scale.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ═══════════════════════════════ SKILLS ═══════════════════════════════════ -->
+  <section class="skills section-pad" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tech Stack</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <p class="section-subtitle">Technologies I use to bring ideas to life</p>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-hex reveal" style="--skill-color:#E44D26">
+          <div class="hex-wrap">
+            <div class="hex-inner">
+              <svg width="36" height="36" viewBox="0 0 512 512"><path fill="#E44D26" d="M107.644 470.877L74.633 100.62h362.733l-33.044 370.199L255.778 512z"/><path fill="#F16529" d="M256 480.523l120.03-33.277 28.24-316.352H256z"/><path fill="#EBEBEB" d="M256 268.217h-60.09l-4.16-46.501H256v-45.411H142.132l1.087 12.183 11.161 125.139H256zm0 122.783l-.199.053-50.574-13.656-3.233-36.217h-45.585l6.362 71.301 93.23 25.873.199-.053z"/><path fill="#fff" d="M255.857 268.217v45.41h55.987l-5.28 59.024-50.707 13.658v47.244l93.274-25.856.684-7.666 10.712-120.028 1.111-12.786H255.857zm0-91.912v45.411h109.167l.907-10.17 2.069-23.08 1.087-12.161z"/></svg>
+              <span>HTML5</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-hex reveal" style="--skill-color:#264DE4">
+          <div class="hex-wrap">
+            <div class="hex-inner">
+              <svg width="36" height="36" viewBox="0 0 512 512"><path fill="#264DE4" d="M72 460L30 0h451l-42 460-183 52z"/><path fill="#2965F1" d="M256 37v404l149-41 36-363z"/><path fill="#EBEBEB" d="M114 94h142v46H162l3 37h91v46h-89l3 36 82 23v47l-134-37zM338 94h45l-3 37h-42v46h39l-4 83-37 10v47l70-20 10-108 2-95h-80z"/></svg>
+              <span>CSS3</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-hex reveal" style="--skill-color:#F7DF1E">
+          <div class="hex-wrap">
+            <div class="hex-inner">
+              <svg width="36" height="36" viewBox="0 0 630 630"><rect width="630" height="630" fill="#f7df1e"/><path d="M423.2 492.19c12.69 20.72 29.2 35.95 58.4 35.95 24.53 0 40.2-12.26 40.2-29.2 0-20.3-16.1-27.49-43.1-39.3l-14.8-6.35c-42.72-18.2-71.1-41-71.1-89.2 0-44.4 33.83-78.2 86.7-78.2 37.64 0 64.7 13.1 84.2 47.4l-46.1 29.6c-10.15-18.2-21.1-25.37-38.1-25.37-17.34 0-28.33 11-28.33 25.37 0 17.76 11 24.95 36.4 35.95l14.8 6.34c50.3 21.57 78.7 43.56 78.7 93 0 53.3-41.87 82.5-98.1 82.5-54.98 0-90.5-26.2-107.88-60.54zm-209.13 5.13c9.3 16.5 17.76 30.45 37.64 30.45 19.23 0 31.35-7.5 31.35-36.95V302.33h57.95v189.81c0 60.86-35.7 88.5-87.82 88.5-47.08 0-74.3-24.42-88.16-53.78z"/></svg>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-hex reveal" style="--skill-color:#3178C6">
+          <div class="hex-wrap">
+            <div class="hex-inner">
+              <svg width="36" height="36" viewBox="0 0 400 400"><rect width="400" height="400" rx="50" fill="#3178c6"/><path fill="#fff" d="M87.7 200.7V217h52v148h36.9V217h52v-16c0-9 0-16.3-.4-16.5-.3-.3-31.7-.4-70-.4l-69.7.3v16.3zM321.4 184c10.2 2.4 18 7 25 14.3 3.7 4 9.2 11 9.6 12.8.1.5-17.3 12.3-27.8 18.8-.4.3-2-1.4-3.6-4-5.2-7.4-10.5-10.6-18.8-11.2-12.1-.8-20 5.5-20 16 0 3.2.5 5 1.8 7.6 2.7 5.5 7.7 8.8 23.2 15.6 28.6 12.3 40.9 20.4 48.5 32 8.5 13 10.4 33.4 4.7 48.7-6.4 16.7-22.2 28-44.4 31.8-6.9 1.2-23.1 1-30.5-.3-16-3-31.3-11-40.7-21.3-3.7-4-10.8-14.7-10.4-15.4l3.8-2.4 15-8.7 11.3-6.6 2.6 3.5c3.3 5.2 10.7 12.2 15 14.6 12.7 6.7 30.1 5.7 38.7-2 3.7-3.4 5.3-6.9 5.3-12 0-4.6-.7-6.7-3-10.2-3.2-4.4-9.6-8-27.6-16-20.7-8.8-29.5-14.4-37.7-23-4.7-5.2-9.1-13.3-11-20-1.5-5.8-2-20-.8-25.7 3.8-17.5 17.5-30.6 36.4-35 5-1.2 17.4-1.5 22.6-.5z"/></svg>
+              <span>TypeScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-hex reveal" style="--skill-color:#61DAFB">
+          <div class="hex-wrap">
+            <div class="hex-inner">
+              <svg width="36" height="36" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.5" fill="#61DAFB"/><ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="#61DAFB" stroke-width="1.3"/><ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="#61DAFB" stroke-width="1.3" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="#61DAFB" stroke-width="1.3" transform="rotate(120 12 12)"/></svg>
+              <span>React</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-hex reveal" style="--skill-color:#68A063">
+          <div class="hex-wrap">
+            <div class="hex-inner">
+              <svg width="36" height="36" viewBox="0 0 256 289"><path fill="#83CD29" d="M128 0L0 73.9v141.9l128 73.9 128-73.9V73.9z"/><path fill="#fff" d="M97 80l31 56 31-56h28L152 148v62h-48v-62L69 80z"/></svg>
+              <span>Node.js</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-hex reveal" style="--skill-color:#21759B">
+          <div class="hex-wrap">
+            <div class="hex-inner">
+              <svg width="36" height="36" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#21759B"/><path fill="#fff" d="M4 12a8 8 0 0 0 5.5 7.6L4.9 8A8 8 0 0 0 4 12zm13.8-1.2c0-1.6-.6-2.7-1.1-3.5-.7-1.1-1.3-2-.3-3.1a8 8 0 0 0-6.1 15.3l3.4-9.8c.6-1.6.1-2 1.7-2l.2.1c.3-.1.2-1.2.2-1z"/></svg>
+              <span>WordPress</span>
+            </div>
+          </div>
+        </div>
+
+<!-- JAVA -->
+<div class="skill-hex reveal" style="--skill-color:#007396">
+  <div class="hex-wrap">
+    <div class="hex-inner">
+
+      <img 
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" 
+        alt="Java"
+        width="36"
+        height="36"
+      />
+
+      <span>Java</span>
+    </div>
+  </div>
+</div>
+<div class="skill-hex reveal" style="--skill-color:#38BDF8">
+  <div class="hex-wrap">
+    <div class="hex-inner">
+
+      <img 
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" 
+        alt="Tailwind CSS"
+        width="36"
+        height="36"
+      />
+
+      <span>Tailwind CSS</span>
+    </div>
+  </div>
+</div>
+<div class="skill-hex reveal" style="--skill-color:#ffffff">
+  <div class="hex-wrap">
+    <div class="hex-inner">
+
+      <img 
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" 
+        alt="Next.js"
+        width="36"
+        height="36"
+      />
+
+      <span>Next.js</span>
+    </div>
+  </div>
+</div>
+<div class="skill-hex reveal" style="--skill-color:#336791">
+  <div class="hex-wrap">
+    <div class="hex-inner">
+
+      <img 
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" 
+        alt="SQL"
+        width="36"
+        height="36"
+      />
+
+      <span>SQL</span>
+    </div>
+  </div>
+</div>
+<!-- PYTHON -->
+<div class="skill-hex reveal" style="--skill-color:#3776AB">
+  <div class="hex-wrap">
+    <div class="hex-inner">
+      <svg width="36" height="36" viewBox="0 0 256 255">
+        <path fill="#3776AB" d="M126.916.004c-10.504.049-20.523.944-29.343 2.507-25.979 4.59-30.709 14.198-30.709 31.908v23.392h61.418v7.797H44.046c-17.836 0-33.452 10.72-38.336 31.104-5.633 23.365-5.882 37.95 0 62.348 4.36 18.156 14.787 31.104 32.623 31.104h21.104v-28.039c0-20.258 17.528-38.104 38.336-38.104h61.342c17.08 0 30.709-14.066 30.709-31.18V34.419c0-16.623-14.018-29.104-30.709-31.908C148.552.742 137.42-.047 126.916.004zM93.709 18.84c6.348 0 11.494 5.266 11.494 11.758 0 6.469-5.146 11.682-11.494 11.682-6.37 0-11.494-5.213-11.494-11.682 0-6.492 5.124-11.758 11.494-11.758z"/>
+        <path fill="#FFD43B" d="M197.678 65.608v27.236c0 21.12-17.904 38.88-38.336 38.88H97.999c-16.807 0-30.709 14.384-30.709 31.18v58.422c0 16.623 14.448 26.402 30.709 31.18 19.466 5.724 38.123 6.756 61.343 0 15.43-4.467 30.709-13.453 30.709-31.18v-23.392H128.709v-7.797h91.975c17.836 0 24.48-12.44 30.709-31.104 6.432-19.216 6.156-37.69 0-62.348-4.424-17.758-12.852-31.104-30.709-31.104zm-34.514 148.11c6.37 0 11.494 5.213 11.494 11.682 0 6.492-5.124 11.758-11.494 11.758-6.348 0-11.494-5.266-11.494-11.758 0-6.469 5.146-11.682 11.494-11.682z"/>
+      </svg>
+      <span>Python</span>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ PROJECTS ══════════════════════════════════ -->
+ <section class="projects section-pad" id="projects">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">My Work</span>
+      <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      <p class="section-subtitle">A selection of things I've built recently</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- E-Commerce -->
+      <div class="project-card reveal">
+        <div class="project-img-wrap">
+          <div class="project-img project-img-ecommerce">
+            <div class="project-mock">
+              <div class="mock-bar"></div>
+              <div class="mock-content">
+                <div class="mock-hero-strip" style="background:linear-gradient(135deg,#6366f1,#8b5cf6)">
+                  <svg width="55" height="40" viewBox="0 0 64 64" fill="none">
+                    <rect x="10" y="18" width="44" height="28" rx="4" fill="#fff"/>
+                    <path d="M18 18V14a6 6 0 0 1 12 0v4" stroke="#6366f1" stroke-width="3"/>
+                    <circle cx="24" cy="31" r="3" fill="#8b5cf6"/>
+                    <circle cx="40" cy="31" r="3" fill="#8b5cf6"/>
+                  </svg>
+                  <span>E-Commerce</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-overlay">
+            <a href="#" class="overlay-btn">Live Demo</a>
+            <a href="#" class="overlay-btn overlay-btn-ghost">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-body">
+          <div class="project-tags">
+            <span>React</span><span>Node.js</span><span>MongoDB</span>
+          </div>
+          <h3 class="project-title">Real-Time E-Commerce Website</h3>
+          <p class="project-desc">
+            A modern full-stack e-commerce platform with secure authentication,
+            live cart updates, Stripe payments, product filtering, and admin dashboard.
+          </p>
+        </div>
+      </div>
+
+      <!-- AI Virtual Mouse -->
+      <div class="project-card reveal">
+        <div class="project-img-wrap">
+          <div class="project-img project-img-ai">
+            <div class="project-mock">
+              <div class="mock-bar"></div>
+              <div class="mock-content">
+                <div class="mock-hero-strip" style="background:linear-gradient(135deg,#06b6d4,#0ea5e9)">
+                  <svg width="55" height="40" viewBox="0 0 64 64" fill="none">
+                    <path d="M32 10C22 10 16 18 16 28v8c0 10 6 18 16 18s16-8 16-18v-8c0-10-6-18-16-18Z" fill="#fff"/>
+                    <circle cx="28" cy="28" r="3" fill="#0ea5e9"/>
+                    <circle cx="36" cy="28" r="3" fill="#0ea5e9"/>
+                  </svg>
+                  <span>AI Mouse</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-overlay">
+            <a href="#" class="overlay-btn">Live Demo</a>
+            <a href="#" class="overlay-btn overlay-btn-ghost">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-body">
+          <div class="project-tags">
+            <span>Python</span><span>OpenCV</span><span>AI</span>
+          </div>
+          <h3 class="project-title">AI Virtual Mouse</h3>
+          <p class="project-desc">
+            An AI-powered virtual mouse using hand gesture recognition with OpenCV and MediaPipe,
+            enabling touchless cursor movement and click actions in real time.
+          </p>
+        </div>
+      </div>
+
+      <!-- 3D T-Shirt Design -->
+      <div class="project-card reveal">
+        <div class="project-img-wrap">
+          <div class="project-img project-img-tshirt">
+            <div class="project-mock">
+              <div class="mock-bar"></div>
+              <div class="mock-content">
+                <div class="mock-hero-strip" style="background:linear-gradient(135deg,#ec4899,#f43f5e)">
+                  <svg width="55" height="40" viewBox="0 0 64 64" fill="none">
+                    <path d="M22 16L32 10L42 16L50 22L44 30L38 26V50H26V26L20 30L14 22L22 16Z" fill="#fff"/>
+                  </svg>
+                  <span>3D T-Shirt</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-overlay">
+            <a href="#" class="overlay-btn">Live Demo</a>
+            <a href="#" class="overlay-btn overlay-btn-ghost">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-body">
+          <div class="project-tags">
+            <span>React</span><span>Three.js</span><span>Tailwind</span>
+          </div>
+          <h3 class="project-title">3D T-Shirt Designer</h3>
+          <p class="project-desc">
+            A fully interactive 3D T-shirt customization app where users can apply
+            colors, logos, and textures in real time using Three.js.
+          </p>
+        </div>
+      </div>
+
+      <!-- Added Project -->
+      <div class="project-card reveal">
+        <div class="project-img-wrap">
+          <div class="project-img project-img-chat">
+            <div class="project-mock">
+              <div class="mock-bar"></div>
+              <div class="mock-content">
+                <div class="mock-hero-strip" style="background:linear-gradient(135deg,#22c55e,#14b8a6)">
+                  <svg width="55" height="40" viewBox="0 0 64 64" fill="none">
+                    <rect x="10" y="14" width="44" height="28" rx="6" fill="#fff"/>
+                    <circle cx="24" cy="28" r="3" fill="#14b8a6"/>
+                    <circle cx="32" cy="28" r="3" fill="#14b8a6"/>
+                    <circle cx="40" cy="28" r="3" fill="#14b8a6"/>
+                  </svg>
+                  <span>AI Chat App</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-overlay">
+            <a href="#" class="overlay-btn">Live Demo</a>
+            <a href="#" class="overlay-btn overlay-btn-ghost">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-body">
+          <div class="project-tags">
+            <span>React</span><span>Firebase</span><span>Gemini API</span>
+          </div>
+          <h3 class="project-title">AI Chat Application</h3>
+          <p class="project-desc">
+            A responsive AI chatbot application integrated with Gemini API featuring
+            real-time messaging, authentication, markdown support, and chat history.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- ═══════════════════════════════ TESTIMONIALS ══════════════════════════════ -->
+ 
+  <!-- ═══════════════════════════════ CONTACT ════════════════════════════════════ -->
+  <section class="contact section-pad" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="section-subtitle">Have a project in mind? I'd love to hear from you.</p>
+      </div>
+
+      <div class="contact-layout">
+
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Rohit More" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="rohit@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Inquiry" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary form-submit">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+
+        <div class="contact-visual reveal">
+          <canvas id="globeCanvas" width="400" height="400"></canvas>
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <div class="ci-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span class="ci-label">Email</span>
+                <span class="ci-value">bothdrill21@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="ci-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <span class="ci-label">Location</span>
+                <span class="ci-value">Thane, Maharashtra, India</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="ci-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.12 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l1.27-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <span class="ci-label">Phone</span>
+                <span class="ci-value">+91 88502 29579</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#home" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>RM<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-copy">© 2025 Rohit More. Crafted with ❤️ &amp; lots of ☕</p>
+        <div class="footer-socials">
+          <a href="https://github.com/Bthdrill45" target="_blank" class="social-link" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.4.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23A11.5 11.5 0 0 1 12 5.8c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/rohit-more-b47584322/" target="_blank"class="social-link" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM3.56 20.45h3.56V9H3.56v11.45z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9.09 9.09 0 0 1-2.88 1.1A4.52 4.52 0 0 0 11.62 6a12.83 12.83 0 0 1-9.3-4.71 4.52 4.52 0 0 0 1.4 6.04 4.48 4.48 0 0 1-2.05-.56v.06a4.52 4.52 0 0 0 3.62 4.43 4.52 4.52 0 0 1-2.04.08 4.52 4.52 0 0 0 4.22 3.14A9.06 9.06 0 0 1 1 19.54 12.77 12.77 0 0 0 7.9 21.5c8.28 0 12.81-6.86 12.81-12.81 0-.19 0-.39-.01-.58A9.17 9.17 0 0 0 23 3z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
