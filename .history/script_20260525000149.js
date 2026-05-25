@@ -403,15 +403,6 @@
     });
 
     // City dots
-    cities.forEach((city, i) => {
-      const pos = latLonToXYZ(city.lat, city.lon, R);
-      const p = project(pos.x, pos.y, pos.z);
-      if (p.z < -10) return;
-      const alpha = Math.min(1, (p.z + R) / (R * .6));
-      ctx.beginPath(); ctx.arc(p.px, p.py, 3.5, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(96,165,250,${alpha})`;
-      ctx.shadowColor = '#60a5fa'; ctx.shadowBlur = 8;
-      ctx.fill(); ctx.shadowBlur = 0;
 
       // Ring
       ctx.beginPath(); ctx.arc(p.px, p.py, 6, 0, Math.PI * 2);
@@ -468,6 +459,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+/* ── SKILL HEX TILT ── */
 document.querySelectorAll('.skill-hex').forEach(hex => {
   hex.addEventListener('mousemove', e => {
     const rect = hex.getBoundingClientRect();

@@ -468,17 +468,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
-document.querySelectorAll('.skill-hex').forEach(hex => {
-  hex.addEventListener('mousemove', e => {
-    const rect = hex.getBoundingClientRect();
-    const x = (e.clientX - rect.left - rect.width / 2) / (rect.width / 2);
-    const y = (e.clientY - rect.top  - rect.height / 2) / (rect.height / 2);
-    hex.querySelector('.hex-wrap').style.transform = `rotateY(${x * 18}deg) rotateX(${-y * 18}deg) scale(1.06)`;
-  });
-  hex.addEventListener('mouseleave', () => {
-    hex.querySelector('.hex-wrap').style.transform = '';
-  });
-});
+
+/* ── SKILL HEX TILT ── */
+
 
 /* ── PROJECT CARD TILT ── */
 document.querySelectorAll('.project-card').forEach(card => {

@@ -468,6 +468,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+
 document.querySelectorAll('.skill-hex').forEach(hex => {
   hex.addEventListener('mousemove', e => {
     const rect = hex.getBoundingClientRect();

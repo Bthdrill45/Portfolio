@@ -414,10 +414,7 @@
       ctx.fill(); ctx.shadowBlur = 0;
 
       // Ring
-      ctx.beginPath(); ctx.arc(p.px, p.py, 6, 0, Math.PI * 2);
-      ctx.strokeStyle = `rgba(96,165,250,${alpha * .4})`;
-      ctx.lineWidth = 1; ctx.stroke();
-
+    
       // Hometown highlight
       if (i === 0) {
         ctx.beginPath(); ctx.arc(p.px, p.py, 5, 0, Math.PI * 2);
@@ -468,6 +465,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+/* ── SKILL HEX TILT ── */
 document.querySelectorAll('.skill-hex').forEach(hex => {
   hex.addEventListener('mousemove', e => {
     const rect = hex.getBoundingClientRect();

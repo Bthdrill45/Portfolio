@@ -468,6 +468,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+/* ── SKILL HEX TILT ── */
 document.querySelectorAll('.skill-hex').forEach(hex => {
   hex.addEventListener('mousemove', e => {
     const rect = hex.getBoundingClientRect();

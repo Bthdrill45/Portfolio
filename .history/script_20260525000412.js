@@ -419,13 +419,7 @@
       ctx.lineWidth = 1; ctx.stroke();
 
       // Hometown highlight
-      if (i === 0) {
-        ctx.beginPath(); ctx.arc(p.px, p.py, 5, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(168,85,247,${alpha})`;
-        ctx.shadowColor = '#a855f7'; ctx.shadowBlur = 14;
-        ctx.fill(); ctx.shadowBlur = 0;
-      }
-    });
+    
 
     // Shine
     const shine = ctx.createRadialGradient(cx - R * .35, cy - R * .35, 0, cx - R * .35, cy - R * .35, R * .5);
